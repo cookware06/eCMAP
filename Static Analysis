@@ -1,0 +1,54 @@
+Static Analysis Techniques
+
+Here we are going to understand the below points,
+
+1. How to identify samples, generate hashes and extract strings that may aid during the analysis.
+2. When and why to use an online scanner or sandbox
+3. PE File format and how it's used in malware analysis
+4. Obfuscation and basic detection methods
+5. How to collect IOC's from samples and write YARA signatures to search for malware on systems.
+
+Basic analysis refers to observing the file's metadata and the other information that's embedded in it.
+
+In Advanced analysis, analyst examines the source code of the malware (Analysis on the disassembled to assembled code).
+
+Basic Static Analysis
+
+1. File Identification and Classification
+2. Scanning
+3. File Format Analysis
+4. Identifying Obfuscation
+
+
+File Identification and Classification
+
+It is process of identifying the file type and obtaining a unique "signature" of the sample being analyzed.
+
+E.g An SSN number
+
+Based on File Types:
+
+1. PE
+2. PDF
+3. DOCX
+
+Base on File Hashes
+
+1. MD5
+2. SHA1
+3. Fuzzy Hash
+
+Based on the Strings: 
+
+ASCII or Unicode
+
+ASCII (Plain text) files, -  no further explanation required as it just plain text files 
+Structured (Binary) Files - Files which has binary structure, E.g PDF and EXE has different structure.
+
+If you take a hexadecimal look at PDF or a PNG file, you will see file starts with %PDF or %PNG with different header and trailer
+
+
+
+
+
+
